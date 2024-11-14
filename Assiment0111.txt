@@ -1,0 +1,27 @@
+// Class to calculate factorial
+class FactorialCalculator {
+    // Method to calculate factorial
+    public int calculateFactorial(int number) {
+        int result = 1;
+        for (int i = 1; i <= number; i++) {
+            result *= i;
+        }
+        return result;
+    }
+}
+
+// Main class to run the program
+public class Main {
+    public static void main(String[] args) {
+        FactorialCalculator calculator = new FactorialCalculator();
+        
+        // Sample input
+        int number = 5;
+        
+        // Calculate factorial
+        int factorial = calculator.calculateFactorial(number);
+        
+        // Display the result
+        System.out.println("Factorial of " + number + " is: " + factorial);
+    }
+}
